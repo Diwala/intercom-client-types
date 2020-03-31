@@ -1,0 +1,41 @@
+{
+    "name": "@types/intercom-client",
+    "version": "2.11.3",
+    "description": "TypeScript definitions for intercom-client",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Jinesh Shah",
+            "url": "https://github.com/jineshshah36",
+            "githubUsername": "jineshshah36"
+        },
+        {
+            "name": "Josef Hornych",
+            "url": "https://github.com/peping",
+            "githubUsername": "peping"
+        },
+        {
+            "name": "Mikhail Monchak",
+            "url": "https://github.com/mikhail-monchak",
+            "githubUsername": "mikhail-monchak"
+        },
+        {
+            "name": "Chris Doe",
+            "url": "https://github.com/cdoe",
+            "githubUsername": "cdoe"
+        }
+    ],
+    "main": "",
+    "types": "index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/intercom-client"
+    },
+    "scripts": {},
+    "dependencies": {
+        "@types/node": "*"
+    },
+    "typesPublisherContentHash": "9f8f4e53f17eb9d97bbbf7e67a189baa1fd30ef460384780d639de93e6bcf23c",
+    "typeScriptVersion": "2.8"
+}
