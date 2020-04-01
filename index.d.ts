@@ -4,6 +4,7 @@
 //                 Josef Hornych <https://github.com/peping>
 //                 Mikhail Monchak <https://github.com/mikhail-monchak>
 //                 Chris Doe <https://github.com/cdoe>
+//                 Malith Wijenayake <https://github.com/malithrw>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 /// <reference types="node" />
@@ -42,6 +43,7 @@ export class Client {
     contacts: Leads;
     leads: Leads;
     visitors: Visitors;
+    messages: Messages;
 }
 
 export class ApiResponse<T> extends IncomingMessage {

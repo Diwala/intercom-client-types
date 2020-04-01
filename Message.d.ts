@@ -2,14 +2,9 @@ interface Avatar {
   image_url: string;
 }
 
-interface FromObject {
+interface FromToObject {
   id: string;
-  type: 'admin';
-}
-
-interface ToObject {
-  id: string;
-  type: 'user' | 'lead';
+  type: string;
 }
 
 interface Owner {
@@ -19,25 +14,24 @@ interface Owner {
   email: string;
   id: string;
   name: string;
-  type: 'admin';
+  type: string;
 }
 
 interface MessageModel {
   body: string;
-  subject: string;
+  message_type: string;
+  subject?: string;
 }
 
 export interface CreateMessage extends MessageModel {
-  from: FromObject;
-  message_type: 'email' | 'inapp';
+  from: FromToObject;
   template?: string;
-  to: ToObject;
+  to: FromToObject;
 }
 
 export interface Message extends MessageModel {
   created_at: number;
   id: string;
-  message_type: 'email' | 'inapp' | 'facebook' | 'twitter';
   owner: Owner;
-  type: 'admin_message';
+  type: string;
 }
